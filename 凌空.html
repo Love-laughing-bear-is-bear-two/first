@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta charset="utf-8">
+<title>凌空</title>
+<link rel="icon" type="image/x-icon" href="1ogo.png">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+<link rel="stylesheet" href="导航栏.css">
+<link rel="stylesheet" href="时间.css">
+
+<style>
+
+		html, body {
+	  background: rgb(20,20,20);
+	  height: 100%;
+	  overflow: hidden;
+	}
+	.svg-wrapper {
+	  position: relative;
+	  top: 10%;
+	  transform: translateY(-50%);
+	  margin: 0 auto;
+	  width: 320px;  
+	}
+	.shape {
+	  stroke-dasharray: 140 540;
+	  stroke-dashoffset: -474;
+	  stroke-width: 8px;
+	  fill: transparent;
+	  stroke: #19f6e8;
+	  border-bottom: 5px solid black;
+	  transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+	}
+	.text {
+	  font-family: '仿宋';
+	  font-size: 22px;
+	  line-height: 32px;
+	  letter-spacing: 8px;
+	  color: #fefefe;
+	  top: -48px;
+	  position: relative;
+	  text-align: center;
+	}
+	.svg-wrapper:hover .shape {
+	  stroke-width: 2px;
+	  stroke-dashoffset: 0;
+	  stroke-dasharray: 760;
+	}
+	a:link{
+		color: #fefefe;
+	}
+	a:visited{
+		color: #fefefe;
+	}
+	
+	body{
+		background-image: url("beijing.png");
+		background-repeat: no-repeat;
+		background-size:100%;
+		border-style: outset;
+		outline: thick ridge white;
+		overflow: scroll;
+	}
+	
+	.div1{
+	width: 1000px;
+    height: 182px;
+    background-color: rgba(28, 193, 218, 1);
+    color: #000;
+    border-radius: 43px;
+    box-shadow: 21px -27px 55px -11px rgba(28,193,218,1),
+0px 15px 12px 0px rgba(0,0,0,0.22);
+	position: relative;left: 250px;top: auto;
+	}
+	.div2{
+	width: 226px;
+    height: 800px;
+    background-color: rgba(28, 193, 218, 1);
+    color: #000;
+    border-radius: 71px;
+    box-shadow: 21px -27px 55px -11px rgba(28,193,218,1),
+0px 15px 12px 0px rgba(0,0,0,0.22);
+	position: relative;left: 10px;
+	}
+	.div3{
+	width: 226px;
+    height: 800px;
+    background-color: rgba(252, 248, 223, 1);
+    color: #000;
+    border-radius: 43px;
+    box-shadow: 21px -27px 55px -11px rgba(252,248,223,1),
+0px 15px 12px 0px rgba(0,0,0,0.22);
+	}
+	.div4{
+	width: 800px;
+    height: 800px;
+    background-color: rgba(137, 213, 202, 1);
+    color: #000;
+    border-radius: 56px;
+    box-shadow: 21px -27px 55px -11px rgba(137,213,202,1),
+0px 15px 12px 0px rgba(0,0,0,0.22);
+	}
+	.div5{
+	width: auto;
+    height: 182px;
+    background-color: rgba(146, 167, 194, 1);
+    color: #000;
+    border-radius: 56px;
+    box-shadow: 21px -27px 55px -11px rgba(146,167,194,1),
+0px 15px 12px 0px rgba(0,0,0,0.22);
+
+	}
+.parent {
+display: grid;
+grid-template-columns: repeat(5, 1fr);
+grid-template-rows: repeat(5, 1fr);
+grid-column-gap: 100px;
+grid-row-gap: 100px;
+}
+
+.div1 { grid-area: 1 / 1 / 2 / 6; }/*文本框排版*/
+.div2 { grid-area: 2 / 1 / 5 / 2; }
+.div3 { grid-area: 2 / 2 / 5 / 3; }
+.div4 { grid-area: 2 / 3 / 5 / 6; }
+.div5 { grid-area: 5 / 1 / 6 / 6; }
+
+</style>
+
+
+
+</head>
+<body>
+	<img src="logo.png" style="position: fixed;" width="200" height="100">
+	<ul class="daohang">
+		<li id="geren" >
+			<a href="#个人中心"></a>
+		</li>
+		<li id="shijian">
+			<a href="#个人中心"></a>
+		</li>
+		<li id="wo">
+			<a href="#个人中心"></a>
+		</li>
+		<li id="sousuo">
+			<a href="#个人中心"></a>
+		</li>
+		<li id="fenlei">
+			<a href="#个人中心"></a>
+		</li>
+	</ul>
+	</div>
+	<br/>
+	<div class="svg-wrapper">
+	  <svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
+	    <rect class="shape" height="60" width="320" />
+	    <div class="text"><a href="http://cxysite.com/" style="text-decoration: none;"> 欢迎来到"凌空"</a></div>
+	  </svg>
+	</div>
+	</h1></a>
+
+<div class="parent">
+	<div class="div1"></div>
+	<div class="div2"></div>
+	<div class="div3"></div>
+	<div class="div4"></div>
+	<div class="div5"></div>
+</div>
+
+<div class="div6">
+    <ul class="icon-nav">
+        <li>
+            <a href="#">
+                <i class="fa fa-home"></i>
+                <span>首页</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <i class="fa fa-product-hunt"></i>
+                <span>用户管理</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <i class="fa fa-user-circle"></i>
+                <span>会员管理</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <i class="fa fa-shopping-bag"></i>
+                <span>商品</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <i class="fa fa-credit-card-alt"></i>
+                <span>文件中心</span>
+            </a>
+        </li>
+        <!-- 分割线 -->
+        <li class="split">
+            <a href="#">
+                <i class="fa fa-bell"></i>
+                <span>消息</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <i class="fa fa-gear"></i>
+                <span>设置</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <i class="fa fa-user"></i>
+                <span>个人中心</span>
+            </a>
+        </li>
+    </ul>
+</div>
+/*实时更新时间*/
+<div class="showTime">2022年8月27-20时35分16秒</div>
+<script>
+  var t = null;
+  t = setTimeout(time, 1000); //开始运行
+  function time() {
+    clearTimeout(t); //清除定时器
+    dt = new Date();
+    var y = dt.getFullYear();
+    var mt = dt.getMonth() + 1;
+    var day = dt.getDate();
+    var h = dt.getHours(); //获取时
+    var m = dt.getMinutes(); //获取分
+    var s = dt.getSeconds(); //获取秒
+    document.querySelector(".showTime").innerHTML =
+      "" +
+      y +
+      "年" +
+      mt +
+      "月" +
+      day +
+      "-" +
+      h +
+      "时" +
+      m +
+      "分" +
+      s +
+      "秒";
+    t = setTimeout(time, 1000); //设定定时器，循环运行
+  }
+</script>
+
+
+
+<audio autoplay="autoplay" loop="loop" preload="auto" controls="controls"
+            src="One Thing.mp3" >
+</video>
+</body>
+</html>
