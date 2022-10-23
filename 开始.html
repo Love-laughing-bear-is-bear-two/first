@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<title>凌空</title>
+<link rel="icon" type="image/x-icon" href="1ogo.png">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">	 
+<link rel="stylesheet" href="按钮.css">
+<link rel="stylesheet" href="时间1.css">
+<body>
+<div class="kaishi">
+<h1 class="btnTest"><a href="D:\gzh\study\编程学习\HTML\first\凌空.html" style="text-decoration: none; ">Welcome to L1NgK0nG</a></h1>
+</div>
+<div class="showTime">2022年8月27-20时35分16秒</div>
+<script>
+  var t = null;
+  t = setTimeout(time, 1000); //开始运行
+  function time() {
+    clearTimeout(t); //清除定时器
+    dt = new Date();
+    var y = dt.getFullYear();
+    var mt = dt.getMonth() + 1;
+    var day = dt.getDate();
+    var h = dt.getHours(); //获取时
+    var m = dt.getMinutes(); //获取分
+    var s = dt.getSeconds(); //获取秒
+    document.querySelector(".showTime").innerHTML =
+      "" +
+      y +
+      "年" +
+      mt +
+      "月" +
+      day +
+      "-" +
+      h +
+      "时" +
+      m +
+      "分" +
+      s +
+      "秒";
+    t = setTimeout(time, 1000); //设定定时器，循环运行
+  }
+</script>
+<img src="logo.png">
+
+ <video src="9-test.mp4" class="bjimg" autoplay loop muted></video>
+<audio autoplay="autoplay" loop="loop" preload="auto" controls="controls" style="position: fixed; bottom: 0; left: 20px;" 
+            src="给你一瓶魔法药水.mp3">
+</body>
+</html>
